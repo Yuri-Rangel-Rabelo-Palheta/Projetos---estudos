@@ -1,0 +1,107 @@
+aqui vao ficar os arquivos para react
+
+conteúdo do canal https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw 
+
+
+############################################
+
+DESAFIOS
+
+#1- Entender as semelhanças do react com as tags html
+    Usar os componentes do react para criar
+
+#2- Criar um componente react
+    Criar um componente que deixa o texto em capslock
+    obs.:um componente react é um javascript, que recebe parametros (props) que é um objeto javascript
+
+#3- Acessar a propriedade Children de um componente
+    Codificar as funções
+    é possivel acessar o "filho" que estiver entre as tags 
+    ex: 
+        function CapsLock(props){
+
+            conts textoInserido = props.children;
+            const textoEmCapsLock = textoInserido.toUpperCase();
+            return <div>
+                    {
+                        textoEmCapsLock
+                    }
+                    </div>
+
+        }
+
+        function Pagina(){
+            return <CapsLock> Texto </CapsLock>
+        }
+            
+#4- Fazer o componente ter memória (state)
+    é possível que um componente tenha memória
+
+    ex:
+
+        import { useState } from 'react'; //hook "gancho" do react para realizar as alterações 
+        
+        function Contador(){
+
+            //let contador = 1;
+
+            const [contador, setContador] = useState(1); //atribuição por desestruturação do javascript
+
+            function acidionarContador(){
+                setContador(contador + 1); 
+                //contador++;
+                //console.log(contador);
+            }
+
+            return{
+                <div>
+                    <div>{contador}</div>
+                    <button onClick = {adicionarContador}> Adicionar </button>
+                </div>
+
+
+            }
+
+
+        }
+
+        function Pagina(){
+
+            return <Contador />
+
+        }
+
+#5- Entender o lado declarativo da parte visual
+
+    O exemplo de codigo anterior ajuda nesse entendimento, pois, usa um hook para atualizar a parte visual  da aplicação web
+
+
+############################################
+
+
+
+##############################################
+Sites Modernos
+
+Páginas Dinâmicas - básico php, html, css, sql.
+
+SPA - sites de uma página, carrega pedaços do conteúdo conforme o usuário interage com a página, possibilitando aplicações web de "tempo real"
+
+Páginas Estáticas - Html, css. Porém, essas páginas podem ser mais inovadoras com as tecnologias atuais.
+
+Framework - next.js + Vercel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
