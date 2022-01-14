@@ -4,7 +4,7 @@ function validaTriangulo (a,b,c){
     this.b = b
     this.c = c
 
-    if(((Math.abs(this.b - this.c)) < (this.a) <(this.b + this.c))&&((Math.abs(this.a - this.c)) < (this.b) <(this.a + this.c))&&((Math.abs(this.b - this.a)) < (this.c) <(this.b + this.a))){
+    if(((Math.abs(this.b - this.c)) < (this.a) <(this.b + this.c))||((Math.abs(this.a - this.c)) < (this.b) <(this.a + this.c))||((Math.abs(this.b - this.a)) < (this.c) <(this.b + this.a))){
 
         console.log("forma um triangulo")
         return true
