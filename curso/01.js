@@ -21,4 +21,4 @@ function div(a, b){
 
 }
 
-console.log("soma de 4 + 2 : "+ soma(4,2) )
+console.log(soma(4,2))
